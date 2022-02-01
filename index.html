@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ani Graphics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- ................header section........... -->
+    <div class="wrapper">
+      <nav>
+        <img src="images/logu.jpg" alt="Background images" />
+        <ul class="topnav" id="dropdownClick">
+          <li><a href="home.html" class="active">home</a></li>
+          <li><a href="index.html">about me</a></li>
+          <li><a href="index.html">services</a></li>
+          <li><a href="pro.html">contact</a></li>
+
+          <!-- we are telling the browser for having a javascript command here and path you are going is undefined so stay here-->
+          <li class="dropdownIcon">
+            <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776; </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="headerContent">
+        <h4>Hello This is Me!</h4>
+        <h1>anila adnan</h1>
+        <h3>expert in graphic design, UI/UX design & video animation.</h3>
+      </div>
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- .......................section#2................ -->
+    <div class="section2">
+      <h2>About my self</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate
+        facilis sequi nemo deleniti ab velit, eligendi alias ducimus iure
+        tempore, dolor a eum reprehenderit numquam? Quo repellendus voluptas
+        quisquam.
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="icon"><i class="fa fa-graduation-cap"></i></div>
+          <h2>4+</h2>
+          <h4>Year of Experience</h4>
+        </div>
+        <div class="col">
+          <div class="icon"><i class="fa fa-book icons"></i></div>
+          <h2>200+</h2>
+          <h4>Total Projects</h4>
+        </div>
+        <div class="col">
+          <div class="icon"><i class="fa fa-users icons"></i></div>
+          <h2>400+</h2>
+          <h4>Happy Clients</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- ...............section#3..................... -->
+    <div class="section3">
+      <h2>Tools</h2>
+      <div class="tools">
+        <div class="toolCol">
+          <img src="./images/AI2.png" alt="Adobe Illustrator" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/ps.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/id.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/xd.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/vyound.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/videoscribe.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/camtesia.png" alt="Adobe Photoshop" />
+        </div>
+        <div class="toolCol">
+          <img src="./images/filmora.png" alt="Adobe Photoshop" />
+        </div>
+      </div>
+    </div>
+    <!-- .................section#4................. -->
+    <div class="section4"><h2>Services</h2></div>
+    <script>
+      function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          //change topnav to topnav responsive
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
